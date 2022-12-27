@@ -55,7 +55,7 @@ create table anahi_perez_valenzuela.insurance_history(
 	id_vehicle varchar(10) not null,
 	hire_date date not null,
 	id_insurance_company varchar(10) not null,
-	termination_end date null,
+	termination_date date null,
 	constraint insurance_history_pk primary key (id_vehicle, num_insurance),
 	constraint insurance_history_vehicle_fk foreign key(id_vehicle)
 	references anahi_perez_valenzuela.vehicles (id_vehicle),
@@ -312,20 +312,20 @@ insert into anahi_perez_valenzuela.vehicles
 values ('015', '005', '2015-05-05', '013', 15500, 'NNN555' );
 
 insert into anahi_perez_valenzuela.insurance_history  
-(num_insurance, id_vehicle, hire_date, id_insurance_company)
-values ('010101', '001', '2001-01-01', '001' );
+(num_insurance, id_vehicle, hire_date, id_insurance_company, termination_date)
+values ('010101', '001', '2001-01-01', '001', '2011-12-31');
 
 insert into anahi_perez_valenzuela.insurance_history  
 (num_insurance, id_vehicle, hire_date, id_insurance_company)
 values ('010102', '001', '2012-01-01', '002' );
 
 insert into anahi_perez_valenzuela.insurance_history  
-(num_insurance, id_vehicle, hire_date, id_insurance_company)
-values ('020201', '002', '2002-02-02', '001' );
+(num_insurance, id_vehicle, hire_date, id_insurance_company, termination_date)
+values ('020201', '002', '2002-02-02', '001', '2002-12-31');
 
 insert into anahi_perez_valenzuela.insurance_history  
-(num_insurance, id_vehicle, hire_date, id_insurance_company)
-values ('020202', '002', '2003-01-01', '004' );
+(num_insurance, id_vehicle, hire_date, id_insurance_company, termination_date)
+values ('020202', '002', '2003-01-01', '004', '2011-11-10');
 
 insert into anahi_perez_valenzuela.insurance_history  
 (num_insurance, id_vehicle, hire_date, id_insurance_company)
@@ -340,16 +340,16 @@ insert into anahi_perez_valenzuela.insurance_history
 values ('080801', '008', '2009-01-01', '001' );
 
 insert into anahi_perez_valenzuela.insurance_history  
-(num_insurance, id_vehicle, hire_date, id_insurance_company)
-values ('015151', '015', '2020-05-05', '002' );
+(num_insurance, id_vehicle, hire_date, id_insurance_company, termination_date)
+values ('015151', '015', '2020-05-05', '002', '2020-12-31');
 
 insert into anahi_perez_valenzuela.insurance_history  
 (num_insurance, id_vehicle, hire_date, id_insurance_company)
 values ('015152', '015', '2021-01-01', '004' );
 
 insert into anahi_perez_valenzuela.insurance_history  
-(num_insurance, id_vehicle, hire_date, id_insurance_company)
-values ('110101', '012', '2011-10-01', '004' );
+(num_insurance, id_vehicle, hire_date, id_insurance_company, termination_date)
+values ('110101', '012', '2011-10-01', '004', '2021-12-11');
 
 insert into anahi_perez_valenzuela.insurance_history  
 (num_insurance, id_vehicle, hire_date, id_insurance_company)
